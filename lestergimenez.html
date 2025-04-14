@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diamond Signs</title>
+  <style>
+    body {
+      
+        table, th, td {
+            border:1000px solid black;
+          }
+          
+      
+      
+        font-family: Arial, sans-serif;
+      text-align: center;
+      background: #e0e0e0;
+      
+      
+    }
+    .diamond-sign {
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      background: orange;
+      color: black;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+      border: 2px solid #333;
+
+    }
+    .diamond-sign span {
+      transform: rotate(-45deg);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .sign-box {
+      background: #333;
+      padding: 5px;
+    }
+    .sign {
+      width: 80px;
+      height: 80px;
+      background: orange;
+      margin: 0 auto;
+      transform: rotate(45deg);
+      border: 2px solid black;
+    }
+    .label {
+      margin-top: 5px;
+      color: white;
+      font-size: 14px;
+    }
+    .coords {
+      margin: 10px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="diamond-sign"><span>DIAMOND<br>SIGNS</span></div>
+  <div class="coords">
+    N37°24.500'<br>W122°09.364'
+  </div>
+  <div class="grid">
+    <div class="sign-box"><div class="sign"></div><div class="label">arrows</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">intersections</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">lanes</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">road status</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">temporary</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">pedestrian</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">animal</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">school zone</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">hospital</div></div>
+    <div class="sign-box"><div class="sign"></div><div class="label">slippery</div></div>
+  </div>
+</body>
+</html>
